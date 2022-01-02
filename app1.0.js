@@ -12,7 +12,8 @@ traditionalBtn.addEventListener('click', () => {
   const tradAuto = document.createElement('div')
   tradAuto.setAttribute('class', 'trad-auto')
   tradAuto.setAttribute('id', `${index}`)
-  tradAuto.innerHTML = `<i class="fas fa-car"></i> <span>${index}</span>`
+  tradAuto.innerHTML = `<i class="fas fa-car"></i> 
+                        <span>${index}</span>`
 
   let emptyGasStation =  Array.from(gasStations).find(item => item.innerHTML === "")
 
@@ -54,13 +55,13 @@ electroBtn.addEventListener('click', () => {
     setTimeout(() => {
       fastCharger.removeChild(eAuto)
       addRemoveElectricDc()
-    }, 7000)
+    }, getRandomSec(5,9) * 1000)
   } else if(slowerCharger.innerHTML === "") {
     slowerCharger.appendChild(eAuto)
     setTimeout(() => {
       slowerCharger.removeChild(eAuto)
       addRemoveElectricAc()
-    }, 15000)
+    }, getRandomSec(10,20) * 1000)
   } else {
     waitingCars.appendChild(eAuto)
   }
@@ -74,7 +75,7 @@ electroBtn.addEventListener('click', () => {
       setTimeout(() => {
         fastCharger.removeChild(waitingElectricAuto)
         addRemoveElectricDc()
-      }, 7000)
+      }, getRandomSec(5,9) * 1000)
     }
   }
 
@@ -87,9 +88,11 @@ electroBtn.addEventListener('click', () => {
       setTimeout(() => {
         slowerCharger.removeChild(waitingElectricAuto)
         addRemoveElectricAc()
-      }, 15000)
+      }, getRandomSec(10,20) * 1000)
     }
   }
+
+  function getRandomSec(min, max) {
+    return Math.floor(Math.random() * max) + min
+  }  
 })
-
-
