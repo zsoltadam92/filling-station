@@ -4,6 +4,26 @@ const waitingCars =  document.querySelector('#waitingCars')
 const electroBtn = document.querySelector('#electroBtn')
 const fastCharger = document.querySelector('.dc')
 const slowerCharger = document.querySelector('.ac')
+// const fillingStations = document.querySelector('#fillingStations')
+  
+  
+    
+    // const traditionalFS = document.createElement('div')
+    // traditionalFS.setAttribute('class', 'traditional')
+    // fillingStations.appendChild(traditionalFS)
+    
+    // const gasStation = document.createElement('div')
+    // gasStation.setAttribute('class', 'gas-station')
+    // traditionalFS.appendChild(gasStation)
+  
+    // const station = document.createElement('span')
+    // station.setAttribute('class', 'station')
+    // station.innerHTML = 'hagyományos'
+    // traditionalFS.appendChild(station)
+    
+  
+
+
 
 let index = 0
 
