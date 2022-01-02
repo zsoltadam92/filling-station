@@ -12,7 +12,7 @@ traditionalBtn.addEventListener('click', () => {
   const tradAuto = document.createElement('div')
   tradAuto.setAttribute('class', 'trad-auto')
   tradAuto.setAttribute('id', `${index}`)
-  tradAuto.innerHTML = `<span>${index}</span>`
+  tradAuto.innerHTML = `<i class="fas fa-car"></i> <span>${index}</span>`
 
   let emptyGasStation =  Array.from(gasStations).find(item => item.innerHTML === "")
 
@@ -45,7 +45,9 @@ electroBtn.addEventListener('click', () => {
   const eAuto = document.createElement('div')
   eAuto.setAttribute('class', 'e-auto')
   eAuto.setAttribute('id', `${index}`)
-  eAuto.innerHTML = `<span>${index}</span>`
+  eAuto.innerHTML = `<i class="fas fa-car"></i>
+                      <i class="fas fa-bolt"></i>
+                      <span>${index}</span>`
 
   if(fastCharger.innerHTML === "") {
     fastCharger.appendChild(eAuto)
