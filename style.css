@@ -1,0 +1,49 @@
+#fillingStations {
+  display: flex;
+}
+
+#waitingCars {
+  display: flex;
+}
+
+.trad-auto {
+  margin: 10px;
+  height: 100px;
+  width: 75px;
+  background-color: black;
+  text-align: center;
+}
+
+.e-auto {
+  margin: 10px;
+  height: 100px;
+  width: 75px;
+  background-color: rgb(57, 57, 235);
+  text-align: center;
+}
+span {
+  display: inline-block;
+  font-size: 2rem;
+  color: white;
+  margin-top: 1rem;
+}
+.gas-station {
+  margin: 10px;
+  height: 200px;
+  width: 150px;
+  background-color: grey;
+}
+
+.dc {
+  margin: 10px;
+  height: 200px;
+  width: 150px;
+  background-color: yellow;
+}
+
+.ac {
+  margin: 10px;
+  height: 200px;
+  width: 150px;
+  background-color: orange;
+}
